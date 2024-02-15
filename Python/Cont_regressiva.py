@@ -7,6 +7,12 @@ def time_countdown(time_sec):
 
     print("\nFELIZ ANO NOVO!")
 
-time_count = 10
-
-time_countdown(time_count)
+while True:
+    
+    time_count = 10
+    time_countdown(time_count)
+    
+    restart = input("\nDeseja reiniciar a aplicação? Se SIM clique Y, caso não queira, clique N:\n")
+    if restart.lower() != 'y':
+        print("\nAplicação encerrada.")
+    break
