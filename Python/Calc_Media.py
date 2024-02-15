@@ -29,7 +29,14 @@ while True:
 
     print("\nMédia das notas =", media)
 
-    reiniciar = input("\nDeseja reiniciar a aplicação? (Y/N): ")
-    if reiniciar.lower() != 'y':
+    if media >= 7:
+        print("\nVocê está aprovado(a)!")
+    elif 4 <= media < 7:
+        print("\nVocê está em recuperação.")
+    else:
+        print("\nVocê está reprovado(a).")
+
+    restart = input("\nDeseja reiniciar a aplicação? Se SIM clique Y, caso não queira, clique N:\n")
+    if reiniciar != 'y':
         print("Aplicação encerrada.")
         break
